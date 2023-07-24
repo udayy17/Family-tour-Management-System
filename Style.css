@@ -1,0 +1,290 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+} 
+.Upper{
+    height: 90vh;
+    width: 100%;
+    background-image: url(3.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+.Upper::after{
+    backdrop-filter: blur(2px);
+    z-index: -1;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%; 
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #f9004d;  
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    font-family: sans-serif;
+    font-size: larger;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
+}
+a.btn{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border:2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.search  h2{
+    color: #ee0c2e;
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    font-style: italic; 
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    text-align: center;
+}
+.search h1{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    padding: 10px;
+    text-align: center;
+}
+.search p{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px;
+    font-family: 'Abel', sans-serif;
+    word-spacing: 8px;
+   text-align: center;
+}
+.search{
+    padding: 145px;
+}
+
+.head h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 12px;
+}
+.head p{
+    text-align: center;
+    padding: 5px;
+    font-size: larger;
+    word-spacing: 4px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.middle
+{
+    display: flex;
+}
+.middle .box2{
+    height: 52vh;
+    width: 20vw;
+    margin-left: 150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 12px;
+    /* background-color: #f3bfc7; */
+    /* border: 2px solid black; */
+}
+.middle .box2 .image{
+    height: 40vh;
+    width: 20vw;
+    /* background-color: aqua; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.middle .box2 .image img{
+    height: 40vh;
+    width: 20vw;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.middle .box2 .content1{
+    height: 4vh;
+    width: 20vw;
+    display: flex;
+    /* background-color: blue; */
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.middle .box2 .content2{
+    height: 5vh;
+    width: 20vw;
+    /* background-color: yellow; */
+}
+.middle .box2 .content2 button{
+    height: 5vh;
+    width: 20vw;
+    /* background-color: yellow; */
+    float: left;
+}
+.middle .box2 .content2 p{
+    margin-left: 35px;
+}
+.offers{
+    width: 80%;
+    height: auto;
+    /*border: 1px solid #000;*/
+    margin: auto;
+    margin-top: 90px;
+}
+.offers h1{
+    font-weight: 600;
+    text-align: center;
+    margin: 0%;
+}
+.offers p{
+    font-weight: 500;
+    text-align: center;
+    margin: 0%;
+}
+.offers .cards{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 1px solid #000;*/
+}
+.offers .cards .card{
+    position: relative;
+    width: 250px;
+    height: 350px;
+   /* border: 1px solid #000;*/
+}
+.offers .cards .card h3{
+    text-decoration: none;
+    width: 170px;
+    padding: 7px;
+    background: rgb(20, 167, 200);
+    border-radius: 20px;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+.offers .cards .card .img_txt{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-top: 12px;
+}
+.offers .cards .card .img_txt img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.offers .cards .card .img_txt h4{
+    position: absolute;
+    font-size: 9px;
+    padding: 10px 15px;
+    bottom: 0;
+    margin: 0;
+    color: #fff;
+    z-index: 2;
+}
+.offers .cards .card .img_txt h4::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(225, 225, 225,.1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+.offers .cards .card .cont_bx{
+    width: 100%;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    border: 1px solid #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 5px 0px;
+    border-radius:0px 0px 5px 5px;
+}
+.offers .cards .card .cont_bx .price .heart_chat{
+    display: flex;
+    align-items: center;
+}
+.offers .cards .card .cont_bx .price .heart_chat p{
+   color: #ee0c2e;
+   font-size: 13px;
+   margin-right: 10px;
+}
+.offers .cards .card .cont_bx .price .heart_chat h4{
+    font-size: 13px;
+ }
+.offers .cards .card .cont_bx .price .info_price p{
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    font-size: 13px;
+}
+.footer{
+    height: 180px;
+    margin-top: 130px;
+    background-image: url(https://www.icolorpalette.com/download/solidcolorimage/1f262a_solid_color_background_icolorpalette.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.footer .box-cont{
+    margin: 160px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px,1fr));
+    align-items: center;
+    gap: 20px;
+}
+.footer .box-cont .box h3{
+    color: white;
+    font-size: 30px;
+    padding-bottom: 30px ;
+}
+.footer .box-cont .box a{
+    color: rgb(211, 203, 203);
+    font-size: 15px;
+    padding-bottom: 15px;
+    display: block;
+}
+.footer .box-cont .box a i{
+    color: #f9004d;
+    padding-right: 12px;
+}
+.footer .box-cont .box a:hover i{
+    padding-right: 15px;
+}
